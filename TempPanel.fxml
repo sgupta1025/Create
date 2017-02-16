@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="120.0" prefWidth="434.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.TempController">
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox prefHeight="505.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="254.0" prefWidth="315.0">
+               <children>
+                  <TextField fx:id="text1" alignment="BOTTOM_LEFT" />
+                  <ComboBox fx:id="box1" prefWidth="150.0" promptText="Temperature" />
+                  <Button fx:id="convert1" mnemonicParsing="false" onAction="#convertTemp" text="Convert" />
+               </children>
+            </HBox>
+            <HBox prefHeight="252.0" prefWidth="434.0">
+               <children>
+                  <TextField fx:id="text2" alignment="BOTTOM_LEFT" />
+                  <ComboBox fx:id="box2" prefWidth="150.0" promptText="Temperature" />
+                  <Button fx:id="convert2" mnemonicParsing="false" onAction="#convertTemp" text="Convert" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
